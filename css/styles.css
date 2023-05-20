@@ -112,6 +112,7 @@ img {
 .header-nav-list {
   display: flex;
   align-items: center;
+  gap: 40px;
 }
 
 .header-nav {
@@ -120,9 +121,9 @@ img {
 }
 .header-nav-item {
 }
-.header-nav-item:not(:last-child) {
+/* .header-nav-item:not(:last-child) {
   margin-right: 40px;
-}
+} */
 .menu-link {
   position: relative;
   font-weight: 500;
@@ -166,10 +167,9 @@ img {
 .header-address-list {
   display: flex;
   align-items: center;
+  gap: 40px;
 }
-.header-address-contacts:not(:last-child) {
-  margin-right: 40px;
-}
+
 
 .contacts {
   font-style: normal;
@@ -274,12 +274,13 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 24px;
 }
 .benefits-icon-item {
 }
-.benefits-icon-item:not(:last-child) {
+/* .benefits-icon-item:not(:last-child) {
   margin-right: 24px;
-}
+} */
 .benefits-link {
 }
 .benefits-icon {
@@ -287,14 +288,15 @@ img {
 
 .benefits-list {
   display: flex;
+  gap: 24px;
 }
 .benefits-item {
   width: calc((100%-72px) / 4);
 }
 
-.benefits-item:not(:last-child) {
+/* .benefits-item:not(:last-child) {
   margin-right: 24px;
-}
+} */
 .benefits-title {
   font-weight: 500;
   font-size: 20px;
@@ -338,9 +340,9 @@ img {
 .about-item {
   width: calc((100%-48px) / 3);
 }
-.about-item :not(:last-child) {
+/* .about-item :not(:last-child) {
   margin-right: 24px;
-}
+} */
 .about-img {
 }
 
@@ -369,6 +371,7 @@ img {
 .team-list {
   background: #f4f4fd;
   display: flex;
+  gap: 24px;
 }
 .team-item {
   background-color: #ffffff;
@@ -380,9 +383,6 @@ img {
 .team-container {
 }
 
-.team-item:not(:last-child) {
-  margin-right: 24px;
-}
 .team-img {
   display: block;
 }
@@ -520,13 +520,14 @@ img {
 .filters-list {
   display: flex;
   justify-content: center;
+  gap: 24px;
   margin-bottom: 72px;
 }
 .filters-item {
 }
-.filters-item:not(:last-child) {
+/* .filters-item:not(:last-child) {
   margin-right: 24px;
-}
+} */
 .filters-btn {
   font-family: var(--primary-font);
   font-weight: 500;
@@ -569,6 +570,7 @@ img {
 .projects-list {
   display: flex;
   flex-wrap: wrap;
+  
 }
 .projects-item {
   width: calc((100% - 48px) / 3);
