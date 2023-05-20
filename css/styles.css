@@ -528,6 +528,12 @@ img {
 
 .customers {
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  .customers-container {
+    max-width: 582px;
+  }
+}
 .customers-title {
   font-weight: 700;
   font-size: 36px;
@@ -556,9 +562,22 @@ img {
 }
 
 .customers-items {
-  width: calc((100% - 32px) / 2);
-  height: 88px;
+  width: calc((100% - 16px) / 2);
 }
+
+@media only screen and (min-width: 768px) {
+  .customers-items {
+    width: calc((100% - 48px) / 3);
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .customers-items {
+    width: calc((100% - 120px) / 6);
+  }
+}
+
+
 /* .customers-items {
   width: calc((100% - 120px) / 6);
   height: 88px;
