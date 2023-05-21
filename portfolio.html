@@ -22,7 +22,7 @@
   </head>
   <body>
     <!--Header section-->
-    <header class="header">
+    <!-- <header class="header">
       <div class="header-container container">
         <nav class="header-nav">
           <a href="./index.html" class="logo link"
@@ -58,7 +58,7 @@
           </ul>
         </address>
       </div>
-    </header>
+    </header> -->
     <main>
       <!-- Projects section -->
 
@@ -68,7 +68,7 @@
 
           <!-- Filters -->
 
-          <ul class="filters-list list">
+          <!-- <ul class="filters-list list">
             <li class="filters-item">
               <button class="filters-btn" type="button">All</button>
             </li>
@@ -84,7 +84,7 @@
             <li class="filters-item">
               <button class="filters-btn" type="button">Marketing</button>
             </li>
-          </ul>
+          </ul> -->
 
           <ul class="projects-list list">
             <li class="projects-item">
@@ -93,7 +93,18 @@
                 <div class="projects-thumb">
                   <img
                     class="projects-img"
-                    src="./images/portfolio-images/app-1.jpg"
+
+                    srcset="
+                    ./images/portfolio-images/img-1_356.jpg 356w,
+                    ./images/portfolio-images/img-1_360.jpg 360w
+                    ./images/portfolio-images/img-1_396.jpg 396w
+                    ./images/portfolio-images/img-1_712.jpg 712w
+                    ./images/portfolio-images/img-1_720.jpg 720w
+                    ./images/portfolio-images/img-1_792.jpg 792w
+                                    
+                    "
+                    sizes="(min-width: 1158px) 356px, (min-width: 768px) 3"
+                    src="./images/portfolio-images/img-1_396.jpg"
                     alt="Banking App Interface Concept"
                     width="360"
                     height="300"
