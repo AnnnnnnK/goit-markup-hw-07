@@ -211,10 +211,17 @@ img {
   font-style: normal;
   margin-left: auto;
 }
+ 
 .header-address-list {
   display: flex;
   align-items: center;
   gap: 40px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  .header-address-list {
+   flex-direction: column;
+   gap: 12px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .header-address-list {
@@ -230,9 +237,6 @@ img {
   color: var(--secondary-color);
 
   display: block;
-  padding-bottom: 24px;
-  padding-top: 24px;
-
   transition: color var(--transition);
 }
 
@@ -256,7 +260,7 @@ img {
     ),
     url(../images/hero/bg_mob@1x.jpg);
 
-  max-width: 1440px;
+   
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -956,6 +960,8 @@ img {
 */
 
 .footer {
+  display: flex;
+    flex-direction: column;
   background: var(--primary-color);
   padding: 100px 0;
 }
@@ -965,6 +971,7 @@ img {
   margin-right: 0;
 }
 .footer-desc {
+  
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -983,8 +990,11 @@ img {
 }
 
 .footer-container {
+  /* display: flex; */
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+
+  /* align-items: baseline; */
 }
 .social-media {
 }
@@ -1443,7 +1453,13 @@ img {
   text-transform: capitalize;
 
   color: var(--primary-color);
+
+  transition: var(--transition);
 }
+.mob-link:hover ,
+.mob-link:focus{
+  color: var(--accent-txt-color);
+} 
 
 .mob-contacts-list {
   margin-bottom: 48px;
@@ -1451,16 +1467,22 @@ img {
 .list {
 }
 .mob-contacts-item {
-
+  width: 353px;
 }
 .mob-tel-link {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  /* text-transform: capitalize; */
+   
   color: var(--secondary-color);
 
+}
+.mob-tel-link:hover ,
+.mob-tel-link:focus ,
+.mob-mail-link:hover ,
+.mob-mail-link:focus{
+  color: var(--accent-txt-color);
 }
 .mob-mail-link {
   font-weight: 500;
