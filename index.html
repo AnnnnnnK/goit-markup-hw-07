@@ -22,7 +22,7 @@
   </head>
   <body>
     <!--Header section-->
-    <!-- <header class="header">
+    <header class="header">
       <div class="header-container container">
         <nav class="header-nav">
           <a href="./index.html" class="logo link"
@@ -61,11 +61,11 @@
           aria-controls="mobile-menu"
         >
           <svg class="menu-toggle-icon" width="32" height="22">
-            <use href="./images/icons.svg#menu-hamburger"></use>
+            <use href="./images/icons.svg#burger-icon"></use>
           </svg>
         </button>
       </div>
-    </header> -->
+    </header>
     <main>
       <!-- Hero section -->
       <section class="hero">
@@ -652,39 +652,83 @@
 
     <!-- Mobile menu -->
 
-    <!-- <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="mob-close-btn   js-close-menu">
+        <svg class="mob-close-icon"
+         
+          width="8"
+          height="8"
         >
-          <path
-            fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          ></path>
+          <use href="./images/icons.svg#close-icon"></use>
         </svg>
       </button>
 
-      <ul class="mobile-menu">
-        <li><a href="" class="link">About</a></li>
-        <li><a href="" class="link">Products</a></li>
-        <li><a href="" class="link">Contacts</a></li>
-        <li><a href="" class="link">Career</a></li>
+      <ul class="mob-list list">
+        <li class="mob-item">
+          <a class="mob-link link" href="./index.html">Studio</a>
+        </li>
+        <li class="mob-item">
+          <a class="mob-link link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="mob-item">
+          <a class="mob-link link" href="">Contacts</a>
+        </li>
       </ul>
-    </div> -->
 
+      <ul class="mob-contacts-list list">
+        <li class="mob-contacts-item">
+          <a class="mob-tel-link link" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        <li class="mob-contacts-item">
+          <a class="mob-mail-link link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        
+        </li>
+      </ul>
+      
+          <ul class="socials-mob-list list">
+            <li class="fsocials-mob-items">
+              <a href="" class="socials-mob-link">
+                <svg class="socials-mob--icons" width="24" height="24">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-mob-items">
+              <a href="" class="socials-mob-link">
+                <svg class="socials-mob-icons" width="24" height="24">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-mob-items">
+              <a href="" class="socials-mob-link">
+                <svg class="socials-mob-icons" width="24" height="24">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-mob-items">
+              <a href="" class="socials-mob-link">
+                <svg class="socials-mob-icons" width="24" height="24">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        
+<!-- modal script -->
     <script src="./js/modal.js"></script>
     <!-- Mobile menu sripts -->
     <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
-    <script defer src="js/mobile-menu.js"></script>
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
+  <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
