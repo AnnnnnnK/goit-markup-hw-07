@@ -253,6 +253,8 @@ img {
 .hero {
   text-align: center;
   padding: 112px 0;
+  margin: 0 auto;
+  max-width: 1440px;
   background-color: rgba(46, 47, 66, 0.7);
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -503,6 +505,11 @@ img {
 
 .about {
   padding-bottom: 120px;
+}
+@media only screen and (max-width: 1157px) {
+  .about {
+    display: none;
+  }
 }
 .about-title {
   font-weight: 700;
