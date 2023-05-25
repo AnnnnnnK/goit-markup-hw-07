@@ -387,8 +387,13 @@ img {
   |============================
 */
 .benefits {
-  padding-bottom: 120px;
-  padding-top: 120px;
+  padding: 120px 0;
+}
+
+@media only screen and (max-width: 1157px) {
+  .benefits {
+    padding: 96px 0;
+  }
 }
 
 .benefits-icon-box {
@@ -540,6 +545,11 @@ img {
 .team {
   background-color: #f4f4fd;
   padding: 120px 0;
+}
+@media only screen and (max-width: 1157px) {
+  .team {
+    padding: 96px 0;
+  }
 }
 
 .team-container {
@@ -952,6 +962,15 @@ img {
     gap: 24px;
   }
 } */
+
+@media only screen and (max-width: 767px) {
+  .footer-tab-container {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    margin-bottom: 72px;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
   .footer-tab-container {
     display: flex;
@@ -1024,7 +1043,6 @@ img {
   align-items: center;
   justify-content: center;
 
-  margin-bottom: 72px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1075,7 +1093,6 @@ img {
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   margin-bottom: 72px;
 }
 @media only screen and (min-width: 768px) {
   .footer-desc-container {
@@ -1133,7 +1150,7 @@ img {
 @media only screen and (min-width: 1158px) {
   .subscribe-label {
     display: block;
-    margin-right: 24px;
+    
   }
 }
 .footer-form-title {
@@ -1612,6 +1629,12 @@ width: 100%;
 }
 .mob-link.active{
    color: var(--accent-txt-color);
+}
+
+@media only screen and (max-width: 427px) {
+  .mob-tel-link {
+    font-size: 23px;
+  }
 }
 
 @media only screen and (max-width: 428px) {
